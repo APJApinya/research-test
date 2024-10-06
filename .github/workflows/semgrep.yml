@@ -21,5 +21,4 @@ jobs:
       image: returntocorp/semgrep
     steps:
     - uses: actions/checkout@v4
-    - run: semgrep ci --config auto --recursive .
-      continue-on-error: true
+    - run: semgrep ci
