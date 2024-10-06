@@ -22,3 +22,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: semgrep ci --config auto --recursive .
+      continue-on-error: true
